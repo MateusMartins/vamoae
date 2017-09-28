@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+	<link rel="stylesheet" href="./public/css/vendor/materialize.min.css" />
+
+	<link rel="stylesheet" href="./public/fonts/fonts.css" />
+	<link rel="stylesheet" href="./public/css/main.css" />
+
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Add to homescreen for Chrome on Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="./public/img/icon-192x192.png">
+	<meta name="theme-color" content="#26a69a">
+
+	<!-- Add to homescreen for Safari on iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="VNS-PWA">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon-precomposed" href="./public/img/icon-144x144.png">
+
+	<!-- Tile icon for Win8 (144x144 + tile color) -->
+	<meta name="msapplication-TileImage" content="./public/img/icon-144x144.png" <meta name="msapplication-TileColor" content="#26a69a">
+
+</head>
+
+<body>
+
+	<header>
+
+		<div class="navbar-fixed">
+			<nav id="w7" role="navigation">
+				<a class="brand-logo" href="#">
+					<img src="./public/img/logo.png"/>
+				</a>
+				<div class="container nav-wrapper">
+					<div id="w7-collapse">
+						<a href="#" id="w11" class="sidenav-toggle" data-activates="main_sidenav">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+
+		<aside id="main_sidenav" class="side-nav" style="transform: translateX(0px);">
+
+			<div class="user-info">
+				<div class="image">
+					<img src="./public/img/user.png" width="48" height="48" alt="User">
+				</div>
+				<div class="info-container">
+					<div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span id="user_name">John Doe</span>
+					</div>
+
+					<div class="email">
+						<span id="user_email">john.doe@example.com</span>
+					</div>
+
+					<div class="btn-group user-helper-dropdown">
+						<a class="dropdown-button" href="#" data-activates="dropdown_user_info">
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+
+						<ul class="dropdown">
+							<ul id="dropdown_user_info" class="dropdown-content">
+								<li>
+									<a href="#/profile/:id" tabindex="-1">
+										<i class="material-icons">account_circle</i>
+										<span>Perfil</span>
+									</a>
+								</li>
+								<li id="btn_user_info_sair">
+									<a href="#" tabindex="-1">
+										<i class="material-icons">input</i>
+										<span>Sair</span>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+
+			<ul>
+				<li><a href="#/"><i class="material-icons">home</i><span>Home</span></a></li>
+				<li><a href="#/"><i class="material-icons">cloud</i><span>Downloads</span></a></li>
+			</ul>
+		</aside>
+
+	</header>
+
+	<main>
+		<div class="container">
+			<div id="app">
+
+				<!-- Preloader -->
+				<!-- <div class="preloader-background">
+					<div class="preloader-wrapper active">
+						<div class="spinner-layer spinner-red-only">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!-- Preloader -->
+
+			</div>
+		</div>
+
+		<!-- Modal Login -->
+		<div class="modal fade" id="modal-login-service">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4>Fazer Login</h4>
+				</div>
+				<div class="modal-body">
+					<form id="form-login-service">
+
+						<div class="section">
+							
+							<div class="input-field col s12">
+								<i class="material-icons prefix">email</i>
+								<input id="login-email" type="email" name="login-email" required class="validate">
+								<label for="login-email">E-mail</label>
+							</div>
+
+							<div class="input-field col s12">
+								<i class="material-icons prefix">lock</i>
+								<input id="login-password" type="password" name="login-password" required class="validate">
+								<label for="login-password">Password</label>
+							</div>
+							
+						</div>
+
+					</form>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat close-modal-login-service">Cancelar</a>
+					<button type="button" id="btn-login-service" class="waves-effect waves-green btn-flat">Entrar</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- Float Action buttons -->
+		<div class="fixed-action-btn horizontal">
+			<a id="open-modal-login-service" class="btn-floating btn-large">
+			  	<i class="large material-icons">account_circle</i>
+			</a>
+			<ul>
+				<li><a class="btn-floating yellow darken-2"><i class="material-icons">insert_chart</i></a></li>
+				<li><a class="btn-floating yellow darken-2"><i class="material-icons">format_quote</i></a></li>
+				<li><a class="btn-floating yellow darken-2"><i class="material-icons">publish</i></a></li>
+				<li><a class="btn-floating yellow darken-2"><i class="material-icons">attach_file</i></a></li>
+			</ul>
+		</div>
+	</main>
+
+</body>
+<script src="./public/js/vendor/jquery.min.js"></script>
+<script src="./public/js/vendor/materialize.min.js"></script>
+<script src="./public/js/install.js"></script>
+<script src="./public/js/vendor/sammy.min.js" type="text/javascript"></script>
+<script src="./public/js/vendor/sammy.template.js" type="text/javascript"></script>
+
+<!-- Call Main Js Files -->
+<script src="./public/js/main.js"></script>
+<script src="./public/js/services/event-service.js"></script>
+<script src="./public/js/services/login-service.js"></script>
+
+</html>
