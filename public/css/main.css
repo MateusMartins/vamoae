@@ -4,7 +4,7 @@
 @media only screen and (min-width:992px){
     .side-nav {
         width: 250px;
-        left: 250px;
+        /*left: 250px;*/
         margin-top: 64px;
     }
 
@@ -12,52 +12,42 @@
         display: none !important;
     }
 }
-
 html {
     height: 100%;
     margin: auto;
 }
-
 body {
     vertical-align: middle;
     background-color: #fff !important;
 }
-
 main #app {
     margin-top: 10%;
 }
-
 nav {
     background-color: #26a69a;
     height: 75px;
     line-height: 55px;
 }
-
 .sidenav-toggle {
     margin-top: 10px;
     position: absolute;
 }
-
 /* Modal Materialize */
 .modal{
     z-index: 9999 !important;
     top: 100px !important;
 }
-
 /* Change Cursor to Link Menu */
 #open-modal-login-service{
     cursor: pointer;
 }
-
 /* Event Style */
 .cta-favorite-event a:nth-child(1) {
     margin-right: 10px;
 }
-
 .cta-favorite-event {
     margin-bottom: 20px;
 }
-
 /* Style For Arrow Back */
 .back {
     display: none;
@@ -66,20 +56,16 @@ nav {
     z-index: 99999;
     color: #fff;
 }
-
 .brand-logo {
     margin-left: 10px;  
 }
-
 .navbar-fixed {
     z-index: 9999;
 }
-
 .side-nav {
     width: 250px;
     margin-top: 64px;
 }
-
 .preloader-background {
 	display: flex;
 	align-items: center;
@@ -92,7 +78,6 @@ nav {
 	right: 0;
 	bottom: 0;	
 }
-
 .side-nav .user-info {
     padding: 25px 15px 10px 15px;
     white-space: nowrap;
@@ -101,12 +86,10 @@ nav {
     background: url(../img/user-img-background.jpg) no-repeat no-repeat;
     height: 150px;
 }
-
 .side-nav .user-info .image {
     margin-right: 12px;
     display: inline-block;
 }
-
 .side-nav .user-info .image img {
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -114,14 +97,12 @@ nav {
     border-radius: 50%;
     vertical-align: bottom !important;
 }
-
 .side-nav .user-info .info-container {
     cursor: default;
     display: block;
     position: relative;
     top: 25px;
 }
-
 .side-nav .user-info .info-container .name, .side-nav .user-info .info-container .email {
     white-space: nowrap;
     -ms-text-overflow: ellipsis;
@@ -132,47 +113,38 @@ nav {
     max-width: 200px;
     color: #fff;
 }
-
 .side-nav .user-info .info-container .user-helper-dropdown {
     position: absolute;
     right: 0px;
     bottom: -5px;
     cursor: pointer;
 }
-
 a.dropdown-button {
     color: #fff;
 }
-
 .dropdown-content {
     min-width: 150px !important;
     left: -170px !important;
 }
-
 /* Card Style */
 .card-title{
     color: #26a69a;
 }
-
 .card-action a{
     color: #26a69a !important;
 }
-
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
     color: #1D8D82 !important;
 }
-
 /* Change browser scroll style */
 body::-webkit-scrollbar-track, .modal::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: #F5F5F5;
 }
-
 body::-webkit-scrollbar, .modal::-webkit-scrollbar {
     width: 10px;
     background-color: #F5F5F5;
 }
-
 body::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb {
     background-color: #26a69a;
 }

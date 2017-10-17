@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<link rel="stylesheet" href="./public/css/vendor/materialize.min.css" />
+	<link rel="stylesheet" href="./public/fonts/fonts.css" />
+	<link rel="stylesheet" href="./public/css/main.css" />
+	<link rel="manifest" href="manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="icon" sizes="192x192" href="./public/img/icon-192x192.png">
+	<meta name="theme-color" content="#26a69a">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-title" content="VNS-PWA">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="apple-touch-icon-precomposed" href="./public/img/icon-144x144.png">
+	<meta name="msapplication-TileImage" content="./public/img/icon-144x144.png" <meta name="msapplication-TileColor" content="#26a69a">
+</head>
+<body>
+	<header>
+		<div class="navbar-fixed">
+			<nav id="w7" role="navigation">
+				<a class="brand-logo" href="#">
+					Vamoaê
+				</a>
+				<div class="container nav-wrapper">
+					<div id="w7-collapse">
+						<a href="#" id="w11" class="sidenav-toggle" data-activates="main_sidenav">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+				<aside id="main_sidenav" class="side-nav" style="transform: translateX(0px);">
+
+			<div class="user-info">
+				<div class="image">
+					<img src="./public/img/user.png" width="48" height="48" alt="User">
+				</div>
+				<div class="info-container">
+					<div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<span id="user_name">John Doe</span>
+					</div>
+
+					<div class="email">
+						<span id="user_email">john.doe@example.com</span>
+					</div>
+
+					<div class="btn-group user-helper-dropdown">
+						<a class="dropdown-button" href="#" data-activates="dropdown_user_info">
+							<i class="material-icons right">arrow_drop_down</i>
+						</a>
+						<!-- DropDown Menu -->
+						<ul class="dropdown">
+							<ul id="dropdown_user_info" class="dropdown-content">
+								<li>
+									<a href="#/profile/:id" tabindex="-1">
+										<i class="material-icons">account_circle</i>
+										<span>Perfil</span>
+									</a>
+								</li>
+								<li id="btn_user_info_sair">
+									<a href="#" tabindex="-1">
+										<i class="material-icons">input</i>
+										<span>Sair</span>
+									</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- Primary Menu -->
+			<ul>
+				<li><a href="#/"><i class="material-icons">home</i><span>Home</span></a></li>
+				<li>
+					<a id="open-modal-login-service">
+						<i class="material-icons">input</i>
+						<span>Entrar</span>
+					</a>
+				</li>
+			</ul>
+		</aside>
+	</header>
+	<div class="row">
+	<div class="col l2 m2 s2"></div>
+		<div class="col l10 m10 s10">
+			<h1>Sobre Nós</h1>
+			<p>	
+				O Vamoae é uma iniciativa de comunicação e divulgação social que mapeia e compartilha eventos que acontecem próximos a sua região para que tenha conhecimento sobre o que está rolando próximo a você. O grande foco do Vamoae é a entrega de informação visando a facilidade e comodidade de poder fazer com que todos que tenham interesse em eventos encontre o mais próximo de sua região com uma certa quantidade de detalhes que só será encontrada em nossa plataforma. Além de poder ficar por dentro dos eventos, você também irá poder fazer a divulgação de um evento que ainda não está incluido.
+			</p>
+			<p>
+				Este projeto foi desenvolvido durante um dos módulos do curso de Sistemas Para Internet do 5º e último semestre, os integrantes são: Gabriel Gomes, Kevin Belletarde, Laura Christina, Mateus Martins, Tonielton Mota e Vinicius Oliveira.
+			</p>
+			<p>
+				Qualquer dúvida, entre em contato através de nossos e-mails.
+			</p>
+		</div>
+	</div>
