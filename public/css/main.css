@@ -61,6 +61,7 @@ nav {
 }
 .navbar-fixed {
     z-index: 9999;
+    height: 75px;
 }
 .side-nav {
     width: 250px;
@@ -147,4 +148,8 @@ body::-webkit-scrollbar, .modal::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb, .modal::-webkit-scrollbar-thumb {
     background-color: #26a69a;
+}
+
+.title-page {
+   font-weight: bold;
 }
