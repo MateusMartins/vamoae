@@ -38,6 +38,26 @@ nav {
     position: absolute;
 }
 
+/* Modal Materialize */
+.modal{
+    z-index: 9999 !important;
+    top: 100px !important;
+}
+
+/* Change Cursor to Link Menu */
+#open-modal-login-service{
+    cursor: pointer;
+}
+
+/* Event Style */
+.cta-favorite-event a:nth-child(1) {
+    margin-right: 10px;
+}
+
+.cta-favorite-event {
+    margin-bottom: 20px;
+}
+
 /* Style For Arrow Back */
 .back {
     display: none;

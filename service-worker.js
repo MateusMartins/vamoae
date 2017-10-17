@@ -1,15 +1,14 @@
 var files = [
 	"index.html",
-	"templates/document-detail.template",
-	"templates/document.template",
+	"templates/event-detail.template",
+	"templates/event.template",
 	"templates/profile.template",
 
 	"manifest.json",
-	"data/documents.json",
-	"data/customers.json",
+	"src/data/documents.json",
+	"src/data/customers.json",
 
 	"public/css/main.css",
-	"public/css/login.css",
 	"public/css/vendor/materialize.min.css",
 	"public/css/vendor/materialize.css",
 
@@ -29,8 +28,8 @@ var files = [
 	"public/js/main.js",
 	"public/js/install.js",
 
-	"public/js/services/login-service.js",
-	"public/js/services/event-service.js",
+	"src/services/login-service.js",
+	"src/services/event-service.js",
 
 	"public/js/vendor/jquery.min.js",
 	"public/js/vendor/materialize.min.js",

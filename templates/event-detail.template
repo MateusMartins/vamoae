@@ -1,0 +1,82 @@
+<style>
+	.sidenav-toggle {
+		display: none;
+	}
+
+	.back {
+		display: block;
+	}
+</style>
+
+<a href="#/" class="back">
+	<i class="material-icons">arrow_back</i>
+</a>
+<section>
+	<div class="row">
+		<div class="col s12 m12 l9 offset-l3 xl10 push-xl2">
+			<article>
+
+				<div class="card">
+					<div class="col s6 m6 l6 xl6 push-x6">
+						<div class="card-image">
+							<img src="<%= item.img %>">
+						</div>
+					</div>
+
+					<div class="col s6 m6 l6 xl6">
+						<div class="card-stacked">
+							<div class="card-content">
+								<p><i class="material-icons">thumb_up</i> <%= item.like %></p>
+								<p><i class="material-icons">thumb_down</i> <%= item.deslike %></p>
+								<p>Data de Inicio: <%= item.created_at %></p>
+
+								<p><%= item.endereco %></p>
+								<p><%= item.cidade %></p>
+								<p><%= item.bairro %></p>
+								<p><%= item.UF %></p>
+								<p><%= item.numeroEndereco %></p>
+								<p><%= item.CEP %></p>
+								<p><%= item.complemento %></p>
+
+								<p>Indicação: <%= item.faixaEtaria %></p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+							<p>Facebook: <%= item.facebook %></p>
+							<p>Instagram: <%= item.instagram %></p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+							<div class="card-content">
+								<p><%= item.descEvento %></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+							<div class="card-content">
+								<h5>Categorias:</h5>
+								<a class="waves-effect waves-light btn-large">Estudo</a>
+								<a class="waves-effect waves-light btn-large">Faculdade</a>
+								<a class="waves-effect waves-light btn-large">Esportes</a>
+							</div>
+						</div>
+					</div>					
+
+					<div class="row">
+						<div class="col s12 m12 l12 xl12">
+							<p>Criado Por: <%= item.idUsuarioCriacao %></p>
+						</div>
+					</div>
+				</div>
+
+			</article>
+		</div>
+	</div>
+</section>
+

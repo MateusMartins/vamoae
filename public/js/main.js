@@ -1,14 +1,14 @@
 jQuery(document).ready(function () {
 
-	const base_url = "http://localhost:4200/";
-
+	const KEY = "arrUserData";
 	$('.modal').modal();
-	
+
 	var Main = {
 		// Init Function
 		init: function (params) {
 			this.params = params;
 			this.bindUI();
+			this.setUserData();
 			this.initNavSlider();
 		},
 
@@ -20,32 +20,26 @@ jQuery(document).ready(function () {
 				that.checkUserLoggedin();
 			});
 
-			// Calling Create Document Modal
-			$("#open-modal-login-service").on("click",function(){
-				$("#modal-login-service").modal('open');
-			});
-
 		}, // End Bind UI
 
 		checkUserLoggedin: function () {
-			that = this;
-			var key = "arrUserData";
-			if (localStorage.getItem(key)) {
-				localStorage.removeItem(key);
-				window.location.href = base_url + 'login.html';
+			if (localStorage.getItem(KEY)) {
+				localStorage.removeItem(KEY);
+				Materialize.toast('Deslogado com sucesso', 4000);
+			}
+		},
+
+		setUserData: function(){
+			if (localStorage.getItem(KEY)) {
+				const UserData = JSON.parse(localStorage.getItem(KEY));
+				$("#user_name").html(UserData[1]);
+				$("#user_email").html(UserData[2]);
+				
 			}
 		},
 
 		initNavSlider: function () {
 			jQuery('.sidenav-toggle').sideNav();
-
-			document.addEventListener("DOMContentLoaded", function () {
-				$('.preloader-background').delay(1700).fadeOut('slow');
-
-				$('.preloader-wrapper')
-					.delay(1700)
-					.fadeOut();
-			});
 		}
 
 	}; // Main Object
