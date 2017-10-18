@@ -30,7 +30,7 @@
 							$("#app").append(
 								'<div class="row">'+
 									'<div class="col s12 m12 l9 offset-l3 xl10 push-xl2">'+
-										'<article>'+
+										'<article id="'+result.data[i].id+'">'+
 											'<div class="card horizontal">'+
 												'<div class="card-image">'+
 													'<img src="'+result.data[i].img+'">'+
@@ -39,11 +39,11 @@
 												'<div class="card-stacked">'+
 													'<div class="card-content">'+
 														'<div class="cta-favorite-event">'+
-															'<a class="waves-effect waves-light btn" style="background-color: #2a9090;">'+
-																'<i class="material-icons right">thumb_up</i>'+result.data[i].like+
+															'<a class="waves-effect waves-light btn btn-rate-like" style="background-color: #2a9090;">'+
+																'<i class="material-icons right">thumb_up</i><span class="rate_like_value">'+result.data[i].like+'</span>'+
 															'</a>'+
-															'<a class="waves-effect waves-light btn" style="background-color: #e83f3f;">'+
-																'<i class="material-icons right">thumb_down</i>'+result.data[i].deslike+
+															'<a class="waves-effect waves-light btn btn-rate-deslike" style="background-color: #e83f3f;">'+
+																'<i class="material-icons right">thumb_down</i><span class="rate_deslike_value">'+result.data[i].deslike+'</span>'+
 															'</a>'+
 														'</div>'+
 
