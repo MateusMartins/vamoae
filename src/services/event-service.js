@@ -38,6 +38,7 @@
 												
 												'<div class="card-stacked">'+
 													'<div class="card-content">'+
+													'<h5 class="title-card">'+result.data[i].name+'</h5>'+
 														'<div class="cta-favorite-event">'+
 															'<a class="waves-effect waves-light btn btn-rate-like" style="background-color: #2a9090;">'+
 																'<i class="material-icons right">thumb_up</i><span class="rate_like_value">'+result.data[i].like+'</span>'+
