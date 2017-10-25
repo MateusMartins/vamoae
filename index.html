@@ -36,30 +36,34 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="#"><i class = "material-icons">home</i> Home</a></li>
           <li><a href="#"><i class = "material-icons">events</i> Eventos</a></li>
-          <li><a href="#">Navbar Link</a></li>
-        </ul>
+          <li>
+            <a class="dropdown-button" href="#" data-activates="dropdown1">
+              <img src="./public/img/user.png" class="circle responsive-img" alt=""> 
+              <i class = "material-icons">arrow_drop_down</i>
+            </a>
+          </li>
+        </ul>  
 
-        <!-- DropDown Menu -->
-        <ul class="dropdown">
-          <ul id="dropdown_user_info" class="dropdown-content">
-            <li>
-              <a href="#/profile/:id" tabindex="-1">
-                <i class="material-icons">account_circle</i>
-                <span>Perfil</span>
-              </a>
-            </li>
-            <li id="btn_user_info_sair">
-              <a href="#" tabindex="-1">
-                <i class="material-icons">input</i>
-                <span>Sair</span>
-              </a>
-            </li>
-          </ul>
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">three</a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav">
-          <li><a href="#">Navbar Link</a></li>
+          <li class="row">
+            <div class="col s4 bg"></div>
+            <div class="col s4 bg">
+              <img src="./public/img/user.png" class="circle responsive-img" alt=""> 
+            </div>
+            <div class="col s4 bg"></div>
+          </li>
+          <li><a href="#"><i class = "material-icons">home</i> Home</a></li>
+          <li><a href="#"><i class = "material-icons">events</i> Eventos</a></li> 
         </ul>
+
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
       </div>
     </nav>  
@@ -98,7 +102,7 @@
     </div>
 
     <!-- Modal Login -->
-    <div class="modal fade" id="modal-login-service">
+    <div class="modal fade" id="modal-login-service" >
       <div class="modal-content">
         <div class="modal-header">
           <h4>Fazer Login</h4>
@@ -142,8 +146,8 @@
   <!--  Scripts-->    
 
   <script src="./public/js/vendor/jquery.min.js"></script>
-  <script src="./public/js/vendor/materialize.min.js"></script>
-  <script src="./public/js/javascript.js"></script>
+  <script src="./public/js/vendor/materialize.min.js"></script> 
+  <script src="./public/js/vendor/javascript.js"></script> 
   <script src="./public/js/install.js"></script>
   <script src="./public/js/vendor/sammy.min.js" type="text/javascript"></script>
   <script src="./public/js/vendor/sammy.template.js" type="text/javascript"></script>
